@@ -1,0 +1,27 @@
+:root {
+
+    /* Цвета */
+    --c_main: #2062E2;
+    --c_main_light: #E9F0FD;
+    --c_two: #173B80;
+    --c_three: #13A9E9;
+
+    --c_red: #DB1B1B;
+    --c_green: #0E9B4F;
+    --c_greenLight: #0E9B4F;
+    --c_orange: #FF8900;
+    --c_grey: #707070;
+    --c_grey_light: #F2F2F2;
+    --c_grey_light2: #D9D9D9;
+
+    --c_black: #000;
+    --c_white: #fff;
+
+    
+    /* Измерения */
+    --p_top_main: 50px;
+    --width_admin_user_change: 290px;
+
+    /* Прочее */
+    --table_border: 1px solid rgba(0, 0, 0, 0.3);
+}

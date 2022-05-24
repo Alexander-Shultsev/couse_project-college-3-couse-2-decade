@@ -1,0 +1,601 @@
+﻿@import "root.css";
+@import "fonts.css";
+@import "main.css";
+
+/* =====================================
+  Авторизация
+========================================*/
+
+h1, h2 {
+  font-size: 40px;
+}
+
+.all {
+  display: flex;
+  height: 100vh;
+}
+
+
+/* About
+===========================*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: url(../img/avtorization_backgroung.png);
+  background-size: cover;
+  color: #fff;
+  width: 29%;
+  min-width: 520px;
+  padding: 60px;
+}
+
+.about img {
+  width: 72px;
+}
+
+.text h1 {
+  margin-bottom: 23px;
+}
+
+.text p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* Аuthorization
+===========================*/
+
+.autotization {
+  margin: auto;
+}
+
+.textbox_area {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.textbox_area input {
+  display: block;
+
+  padding: 0 30px;
+  outline: none;
+  background: none;
+
+  width: 347px;
+  height: 68px;
+  font-size: 18px;
+  color: #000;
+  border: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 7px;
+}
+
+.textbox_area input:first-child {
+  margin-bottom: 18px;
+}
+
+.textbox_area input:focus {
+  border: 2px solid var(--c_main);
+}
+
+.textbox_area input:hover {
+  border: 2px solid var(--c_main);
+}
+
+
+/* Шрифт placeholder у input */
+input::placeholder {
+  color: rgba(0, 0, 0, .7);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Кнопка авторизироваться */
+.autotization .sing-in {
+  margin-top: 30px;
+
+  width: 162px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: var(--c_main);
+
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid var(--c_main);
+  outline: none;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+.autotization .sing-in:hover {
+  background-color: #fff;
+  border: 2px solid var(--c_main);
+  color: var(--c_main);
+}
+
+
+
+/* =====================================
+  Чтобы голова не замёрзла
+========================================*/
+
+header {
+  background: var(--c_main);
+  margin-bottom: 30px;
+  height: 78px;
+}
+
+.header_no_margin header {
+    margin-bottom: 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  color: #fff;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 60px;
+}
+
+.header__logo h1 {
+  margin-left: 15px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.header__inner h2 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .06pc;
+}
+
+
+
+/* =====================================
+  Страцница выставления оценок и пропусков
+========================================*/
+
+.about__group {
+    display: flex;
+    margin: 32px 0;
+}
+
+.back {
+    padding: 10px 19px 12px 16px;
+
+    width: 51px;
+    height: 51px;
+
+    border: 2px solid var(--c_main);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--c_main);
+
+    transition: .1s;
+}
+
+.back:hover {
+    background: var(--c_main);
+    color: #fff;
+}
+
+.left-arrow {
+    width: 15px;
+    height: 25.5px;
+    fill: var(--c_main);
+
+    transition: .1s;
+}
+
+.back:hover > .left-arrow {
+    fill: #fff;
+}
+
+.number__group {
+    padding: 7px 21px;
+    margin: 0 23px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    background: var(--c_main);
+    border-radius: 6px;
+    color: #fff;
+}
+
+
+/* Таблица
+========================================*/
+
+.progress-table {
+    height: 800px;
+    background: #fff;
+    font-size: 18px;
+
+    overflow-y: scroll;
+}
+
+.container {
+  width: 100%;
+  max-width: 1188px;
+  margin: 0 auto;
+}
+
+.progress-table .content {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+/* Ячейки */
+.progress-table .content th, 
+.progress-table .content td {
+  font-weight: 400;
+  border: 1px solid #CCC;
+  height: 35px;
+  width: 46px;
+}
+
+/* Ячейки заголовков */
+.progress-table .content th {
+  height: 100px;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* Ячейка заголовка ИТОГ */
+.progress-table .content th:nth-last-child(-n+1) {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  writing-mode: inherit;
+  transform: rotate(0);
+}
+
+/* Ячейки с серым фоном */
+.progress-table .content th,
+.progress-table .content td:nth-child(1),
+.progress-table .content td:nth-child(2),
+.progress-table .content td:nth-last-child(-n+1) {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Перыый столбец */
+.progress-table .content td:nth-child(1) {
+  font-weight: 500;
+  width: 38px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Второй столбец */
+.progress-table .content td:nth-child(2) {
+  font-weight: 500;
+  padding-left: 9px;
+  overflow: hidden;
+  width: 244px;
+}
+
+/* Последний столбец */
+.progress-table .content td:last-child {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Подсвечивание строки при наведении */
+.progress-table .content tbody tr:hover {
+  background-color: #E0EAFF;
+  color: #2062E2 !important;
+}
+
+/* Изменение цвета текста первого столбца при наведении */
+.progress-table .content tbody tr:hover td:nth-child(1) {
+  color: #2062E2;
+}
+
+.progress-table .input {
+  position: relative;
+}
+
+.progress-table .input__gap {
+  position: absolute;
+  top: 3px; right: 3px;
+  font-size: 12px;
+  color: var(--c_red);
+  text-transform: uppercase;
+}
+
+/* Поле ввода оценки */
+.progress-table .input__mark {
+  height: 100%;
+  width: 100%;
+  background: none;
+  cursor: pointer;
+  outline-color: #2062E2;
+  border: none;
+
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ /*Скролл*/
+::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #EDEDED;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* ===================================== 
+  Страница навигации преподавателя + студента
+========================================*/
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  margin-top: var(--p_top_main);
+}
+
+.navigation.teacher > .disceplines {
+  padding: 20px 0;
+  background-color: var(--c_grey_light);
+}
+
+.navigation.teacher .disceplines__title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.navigation.teacher .group {
+  display: flex;
+  column-gap: 8px;
+}
+
+.navigation.teacher .group__item {
+    padding: 10px 17px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: var(--c_grey) 3px solid;
+    color: var(--c_grey);
+    background-color: var(--c_grey_light);
+
+    transition: .2s;
+}
+
+.navigation.teacher .group__item:hover {
+  border: var(--c_main) 3px solid;
+  background-color: var(--c_main);
+  color: var(--c_white);
+}
+
+.navigation.student .disceplines__item {
+  width: 1400px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: var(--c_grey_light);
+}
+
+
+
+/* ===================================== 
+  Админ панель
+========================================*/
+
+.admin {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Навигация */
+.admin .nav {
+    display: flex;
+    margin-top: var(--p_top_main);
+}
+
+.admin .nav__tab {
+    padding: 5px 12px;
+    border: 2px solid var(--c_grey_light2);
+    color: var(--c_black);
+
+    cursor: pointer;
+}
+
+.admin .nav__tab.active {
+    background-color: var(--c_black);
+    border: 2px solid var(--c_black);
+    color: var(--c_white);
+}
+
+/* Таблица в панели администратора */
+
+.table-content {
+    display: none;
+}
+
+.table-content.active {
+    display: block;
+}
+
+.table-content .grid {
+    padding: 8px 20px;
+    border-bottom: 1px solid var(--c_grey_light2);
+}
+
+.table-content .grid-col-user {
+    grid-template-columns: .5fr .3fr .2fr;
+}
+
+.grid-col-1 {
+    grid-template-columns: 1fr;
+}
+
+.table-content .row-title {
+    background-color: var(--c_grey_light);
+}
+
+.table-content .row-title p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Оформление текста */
+.table-content .user-type {
+    color: var(--c_three);
+}
+
+.table-content a {
+    transition: .1s;
+}
+
+.table-content a:hover {
+    color: var(--c_grey);
+}
+
+/* =====================================
+    Изменение данных о пользователе
+========================================*/
+
+.change-user {
+    grid-template-columns: 450px 1fr;
+    min-height: 100vh;
+}
+
+.change-user select {
+    outline: none;
+}
+
+.main_info, .additional_info {
+    padding-top: 50px;
+}
+
+.main_info .title,
+.additional_info__name {
+    margin-bottom: 24px;
+}
+
+.main_info > form {
+    width: var(--width_admin_user_change);
+}
+
+.main_info > form > button[type=submit] {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.main_info > form > button[type=submit]:last-child {
+    margin-bottom: 0;
+}
+
+.change-user__elem p {
+    color: var(--c_main);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.change-user__elem input,
+.change-user__elem select {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 9px 15px;
+
+    border: 2px solid var(--c_main);
+    border-radius: 5px;
+
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--c_main_light);
+}
+
+.change-user__elem select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.additional_info > .title {
+    margin-left: 80px;
+}
+
+.additional_info > form {
+    margin-left: 80px;
+}
+
+.additional_info .title {
+    margin-right: 20px;
+}
+
+.additional_info .button-add {
+    transform: translateY(-10%);
+}
+
+.additional_info input,
+.additional_info select {
+    margin-bottom: 7px;
+    padding: 9px 15px;
+
+    border: 2px solid var(--c_grey_light2);
+    border-radius: 5px;
+
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.additional_info input:last-child {
+    margin-top: 15px;
+    border: none;
+}
+
+.additional_info select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.main_info_m {
+    display: block;
+    height: 20px;
+}
+
+.additional_info select:first-child {
+    margin-right: 10px;
+}
+
+.additional_info .admin-button {
+    width: var(--width_admin_user_change);
+}

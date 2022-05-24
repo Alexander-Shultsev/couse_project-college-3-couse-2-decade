@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--c_black);
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+a, button, input[type=submit] {
+    cursor: pointer;
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+.container-progress {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-admin {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.error-message {
+    color: var(--c_red);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/* Компоненты */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.fl-d-c {
+    flex-direction: column;
+}
+
+/* grid */
+.grid {
+    display: grid;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/* color */
+.c_main_light {
+    background: var(--c_main_light);
+}
+.c_main {
+    background: var(--c_main);
+}
+.c_red {
+    background: var(--c_red);
+}
+.c_green {
+    background: var(--c_green);
+}
+
+/*================ Кнопки успеваемости и темы ================*/
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.buttons-1 {
+    display: flex;
+}
+
+.admin-button {
+    border-radius: 5px;
+    padding: 10px 0;
+    color: var(--c_white);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.button-add {
+    padding: 5px 8px;
+    color: var(--c_white);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.item {
+    width: 176px;
+    height: 33px;
+
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    border: var(--table_border);
+    border-width: 1px 1px 0 1px;
+
+    transition: .1s;
+}
+
+.item:hover {
+    background: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.05);
+    border-width: 1px 1px 0 1px;
+}
+
+.item-1 {
+    border-radius: 7px 0 0 0;
+}
+
+.item-2 {
+    border-radius: 0 7px 0 0;
+}
+
+.buttons-1 > .active {
+    border: var(--table_border);
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
